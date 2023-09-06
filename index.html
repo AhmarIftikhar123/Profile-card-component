@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="tailwind.css" />
+
+    <link rel="stylesheet" href="vanila.css" />
+
+    <title>Frontend Mentor | Profile card component</title>
+  </head>
+  <body class="min-h-screen flex flex-col justify-center items-center">
+    <img src="images/bg-pattern-top.svg" class="img1" alt="" />
+    <img src="images/bg-pattern-bottom.svg" class="img2" alt="" />
+
+    <main class="wrapper bg-white  rounded-2xl">
+      <!-- design_img -->
+
+      <div class="design_img absolute">
+        <img src="images/bg-pattern-card.svg" class="rounded-t-2xl" />
+      </div>
+
+      <div class="All_user_content relative">
+        <!-- user_data -->
+
+        <div
+          class="user_data flex flex-col justify-center items-center "
+        >
+          <!-- person_img -->
+
+          <div class="person_img bg-gray-300 rounded-full overflow-hidden p-1">
+            <img
+              src="images/image-victor.jpg"
+              class="rounded-full w-full"
+              alt=""
+            />
+          </div>
+          <strong class="mt-4"
+            >Victor Crest <span class="ml-1 font-">26</span></strong
+          >
+
+          <p class="text-sm mt-2 mb-5 ">London</p>
+        </div>
+        <hr class=" " />
+        <!-- Footer -->
+
+        <footer class="flex justify-evenly p-6 relative">
+          <!-- box1 -->
+          <div class="f_data">
+            <h2 class="font-bold">80K</h2>
+            <small>Followers</small>
+          </div>
+          <!-- box2 -->
+          <div class="f_data">
+            <h2 class="font-bold">803K</h2>
+            <small>Likes</small>
+          </div>
+          <!-- box3 -->
+          <div class="f_data">
+            <h2 class="font-bold">1.4K</h2>
+            <small>Photos</small>
+          </div>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>

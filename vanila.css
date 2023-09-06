@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=DM+Sans:ital,opsz,wght@1,9..40,200&family=Epilogue&family=Hanken+Grotesk:wght@200&family=Inter:wght@200&family=Josefin+Sans:wght@200;300&family=Kumbh+Sans:wght@300;400&family=League+Spartan&family=Lexend+Deca:wght@300;400&family=Libre+Franklin:wght@200&family=Manrope:wght@200&family=Outfit:wght@200&family=Plus+Jakarta+Sans:wght@200&family=Poppins:wght@200&family=Red+Hat+Display&display=swap");
+
+:root {
+  --Darkyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+body {
+  background-color: var(--Darkyan);
+  overflow: hidden;
+}
+.wrapper {
+  width: 350px;
+  height: 385px;
+  z-index: 2;
+}
+.img1 {
+  position: absolute;
+  transform: translate(-45%, -45%);
+}
+
+.img2 {
+  position: absolute;
+  transform: translate(50%, 48%);
+}
+.design_img {
+  display: block;
+}
+strong {
+  color: var(--Very-dark-desaturated-blue);
+}
+small,
+p,
+span {
+  color: var(--Dark-gray);
+}
+.All_user_content {
+  transform: translateY(35%);
+}
+
+@media (max-width: 480px) {
+  .img1 {
+    transform: translate(-65%, -67%);
+  }
+  .img2 {
+    transform: translate(60%, 70%);
+  }
+}
+@media (max-width: 280px) {
+  .design_img img {
+    height: 9.5rem;
+    border-radius: 0;
+  }
+}
